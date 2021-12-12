@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{ea3b06a2-7207-4cbe-89d3-910940db0218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{00cb5531-12dc-42fd-82d0-3f755073322c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\CPU">
+      <UniqueIdentifier>{72b55dc9-de3d-4ff5-8745-e4d839f85cc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GPU_CUDA">
+      <UniqueIdentifier>{ed9348e8-9d17-42f1-b9e0-827db41b8554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GPU_OPENCL">
+      <UniqueIdentifier>{f38767d1-d46b-40a0-8401-9ff006e2e418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\CPU">
+      <UniqueIdentifier>{c893b6e3-417d-454b-978e-4d8a8957b30a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\GPU_CUDA">
+      <UniqueIdentifier>{9d2086eb-c60e-4c0a-8cf9-4089646b9b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\GPU_OPENCL">
+      <UniqueIdentifier>{758d57f2-1060-48d4-bc1b-5147f689c0a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Helper">
+      <UniqueIdentifier>{c5fdcaaf-2ae4-48a7-a4f0-2d5dbc5e2e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Helper">
+      <UniqueIdentifier>{ec1adfbc-7e27-4ade-98ff-ac21c598c4b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SobelFilter.cpp">
+      <Filter>Source\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSobelFilter.cpp">
+      <Filter>Source\GPU_OPENCL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Helper\src\Common.cpp">
+      <Filter>Source\Helper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CudaSobelFilter.h">
+      <Filter>Headers\GPU_CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="CLSobelFilter.h">
+      <Filter>Headers\GPU_OPENCL</Filter>
+    </ClInclude>
+    <ClInclude Include="SobelFilter.h">
+      <Filter>Headers\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Helper\inc\CLHelper.h">
+      <Filter>Headers\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Helper\inc\Common.h">
+      <Filter>Headers\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Helper\inc\CudaHelper.h">
+      <Filter>Headers\Helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CudaSobelFilter.cu">
+      <Filter>Source\GPU_CUDA</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KernelSobelFilter.cl">
+      <Filter>Source\GPU_OPENCL</Filter>
+    </None>
+  </ItemGroup>
+</Project>

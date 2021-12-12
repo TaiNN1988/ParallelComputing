@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="CudaAddVector.cu">
+      <Filter>Source\GPU_CUDA</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="AddVector.cpp">
+      <Filter>Source\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAddVector.cpp">
+      <Filter>Source\GPU_OPENCL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddVector.h">
+      <Filter>Headers\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="CLAddVector.h">
+      <Filter>Headers\OPENCL</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaAddVector.h">
+      <Filter>Headers\GPU</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KernelAddVector.cl">
+      <Filter>Source\GPU_OPENCL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{6ca4b4cc-ec60-4f63-bfa8-5787210a2267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4a779b85-278b-4032-a35b-7bec379eb299}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\CPU">
+      <UniqueIdentifier>{4a2c5b5f-b02a-4b98-b218-898dcb8de114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\CPU">
+      <UniqueIdentifier>{91dbfa3b-e9af-4465-8f17-0f77e174c800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\GPU">
+      <UniqueIdentifier>{92c506eb-03c7-4b2a-94ca-f0f633ef6772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\OPENCL">
+      <UniqueIdentifier>{d773ceea-c4fb-41a8-9012-a212cf573500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GPU_CUDA">
+      <UniqueIdentifier>{c23a6ac0-b086-4487-a33c-0d1e475447e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GPU_OPENCL">
+      <UniqueIdentifier>{c1e232a5-22ae-4b11-8373-be671aa36a9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
